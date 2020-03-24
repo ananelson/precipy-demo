@@ -9,7 +9,7 @@
 
 Templates can be written in any markup language. Markdown is a common choice.
 
-Template tags use Jinja2 syntax. Here is the "template designer documentation":https://jinja.palletsprojects.com/en/2.11.x/templates/ page.
+Template tags use Jinja2 syntax. Here is Jinja's [template designer documentation](https://jinja.palletsprojects.com/en/2.11.x/templates/) page.
 
 ## Environment
 
@@ -74,7 +74,7 @@ Depending on the use case, you may wish to link to assets in the output director
 
 Here are examples of img tages using each of these three.
 
-<img src="{{ af.files[PLOT_FILENAME].canonical_filename }}" width="200px"></img>
+<img src="{{ af.files[PLOT_FILENAME].canonical_filename }}" style="border: thin solid grey; width: 200px;" width="200px"></img>
 <img src="{{ af.files[PLOT_FILENAME].cache_filepath }}"  style="border: thin solid blue; width: 200px;"></img>
 <img src="{{ af.files[PLOT_FILENAME].public_urls[0] }}"  style="border: thin solid red; width: 200px;"></img>
 

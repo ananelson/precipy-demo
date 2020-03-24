@@ -1,0 +1,7 @@
+xhtml2pdf
+weasyprint
+matplotlib
+numpy
+pandas
+tables
+google-cloud-storage

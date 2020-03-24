@@ -9,7 +9,7 @@
 
 Templates can be written in any markup language. Markdown is a common choice.
 
-Template tags use Jinja2 syntax. Here is the "template designer documentation":https://jinja.palletsprojects.com/en/2.11.x/templates/ page.
+Template tags use Jinja2 syntax. Here is Jinja's [template designer documentation](https://jinja.palletsprojects.com/en/2.11.x/templates/) page.
 
 ## Environment
 
@@ -43,14 +43,21 @@ Each of these function keys can also be used directly. Let's look at the attribu
 #### plot_values
 
 `function_name` attribute:
-<bound method AnalyticsFunction.function_name of <precipy.analytics_function.AnalyticsFunction object at 0x11a264cc0>>
+plot_values
 
 `function_elapsed_seconds` attribute:
-The function took 0.5163979530334473 seconds to run.
+The function took 0.6159100532531738 seconds to run.
 
 `function_source` attribute, with `highlight` filter applied:
 <pre>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><a name="l-1"></a><span style="color: #666666">&lt;</span>bound method AnalyticsFunction<span style="color: #666666">.</span>function_source of <span style="color: #666666">&lt;</span>precipy<span style="color: #666666">.</span>analytics_function<span style="color: #666666">.</span>AnalyticsFunction <span style="color: #008000">object</span> at <span style="color: #666666">0x11a264cc0&gt;&gt;</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><a name="l-1"></a><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">plot_values</span>(af, c, n):
+<a name="l-2"></a>    <span style="color: #008000">print</span>(af<span style="color: #666666">.</span>path_to_cached_file(RANDOM_FILENAME, <span style="color: #BA2121">&quot;generate_data&quot;</span>))
+<a name="l-3"></a>    <span style="color: #008000; font-weight: bold">for</span> f <span style="color: #AA22FF; font-weight: bold">in</span> af<span style="color: #666666">.</span>read_file(RANDOM_FILENAME, <span style="color: #BA2121">&quot;generate_data&quot;</span>, mode<span style="color: #666666">=</span><span style="color: #BA2121">&quot;rb&quot;</span>):
+<a name="l-4"></a>        ary <span style="color: #666666">=</span> np<span style="color: #666666">.</span>load(f)
+<a name="l-5"></a>    plt<span style="color: #666666">.</span>plot(ary, <span style="color: #BA2121">&#39;ro&#39;</span>)
+<a name="l-6"></a>    plt<span style="color: #666666">.</span>plot([<span style="color: #666666">0</span>, n], [c, c])
+<a name="l-7"></a>    plt<span style="color: #666666">.</span>savefig(PLOT_FILENAME)
+<a name="l-8"></a>    af<span style="color: #666666">.</span>add_existing_file(PLOT_FILENAME, remove<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>)
 </pre></div>
 </pre>
 
@@ -75,15 +82,15 @@ Let's look at the attributes available for a `files` instance.
 
 Canonical Filename: plot_with_overlay.png
 
-Cache Filepath: /var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/e6/e6ec5e651a4ef84f9bb315640a3711223b6786d5f2ec36af2ab383776a457798.png
+Cache Filepath: /var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/ac/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png
 
-Public URLs: ['https://storage.googleapis.com/precipy_demo_cache/e6ec5e651a4ef84f9bb315640a3711223b6786d5f2ec36af2ab383776a457798.png']
+Public URLs: ['https://storage.googleapis.com/precipy_demo_cache/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png']
 
 Depending on the use case, you may wish to link to assets in the output directory (which will be the same directory where documentation will end up. Or the cache filepath, which will be a fully qualified path on the same file system. Or one of the Public URLs which show where the item has been uploaded to cloud storage. (Bucket must be sent to public/anonymous access.)
 
 Here are examples of img tages using each of these three.
 
-<img src="plot_with_overlay.png" width="200px"></img>
-<img src="/var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/e6/e6ec5e651a4ef84f9bb315640a3711223b6786d5f2ec36af2ab383776a457798.png"  style="border: thin solid blue; width: 200px;"></img>
-<img src="https://storage.googleapis.com/precipy_demo_cache/e6ec5e651a4ef84f9bb315640a3711223b6786d5f2ec36af2ab383776a457798.png"  style="border: thin solid red; width: 200px;"></img>
+<img src="plot_with_overlay.png" style="border: thin solid grey; width: 200px;" width="200px"></img>
+<img src="/var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/ac/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png"  style="border: thin solid blue; width: 200px;"></img>
+<img src="https://storage.googleapis.com/precipy_demo_cache/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png"  style="border: thin solid red; width: 200px;"></img>
 
