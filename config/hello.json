@@ -3,14 +3,17 @@
     "output_bucket_name" : "precipy_demo_output",
     "logfile" : "logs/precipy.log",
     "loglevel" : "DEBUG",
+    "constants" : {
+        "RANDOM_FILENAME" : "random_0_100.npy",
+        "PLOT_FILENAME" : "plot_with_overlay.png"
+    },
     "analytics" : [
         ["write_data_file_without_object", {"x" : 8, "y" : 3}],
         ["read_data_file_without_object", {}],
-        ["generate_data", {"filename" : "random_0_100.npy", "seed" : 1002, "a" : 0, "b" : 101, "n" : 10}],
-        ["generate_data_1000", {"function_name" : "generate_data", "filename" : "random_0_1000.npy", "a" : 0, "b" : 1000, "n" : 10}],
-        ["plot_values", {"depends" : ["generate_data"], "input_filename" : "random_0_100.npy", "c" : 40, "n" : 10, "output_filename" : "plot_with_overlay_30.png" }
-        ]
+        ["generate_data", {"seed" : 1002, "a" : 0, "b" : 101, "n" : 10}],
+        ["generate_data_1000", {"function_name" : "generate_data",  "a" : 0, "b" : 1000, "n" : 10}],
+        ["plot_values", {"depends" : ["generate_data"], "c" : 40, "n" : 10}]
     ],
-    "templates" : ["hello.md"],
+    "templates" : ["template_documentation.md"],
     "filters" : [["markdown", "html"], ["weasyprint", "pdf"]]
 }
