@@ -14,6 +14,6 @@
         ["generate_data_1000", {"function_name" : "generate_data",  "a" : 0, "b" : 1000, "n" : 10}],
         ["plot_values", {"depends" : ["generate_data"], "c" : 40, "n" : 10}]
     ],
-    "templates" : ["template_documentation.md"],
+    "templates" : [{"file" : "template_documentation.md", "name" : "template_docs_{{ generate_data.args.n }}.md"}],
     "filters" : [["markdown", "html"], ["weasyprint", "pdf"]]
 }
