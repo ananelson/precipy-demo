@@ -46,7 +46,7 @@ Each of these function keys can also be used directly. Let's look at the attribu
 plot_values
 
 `function_elapsed_seconds` attribute:
-The function took 0.6159100532531738 seconds to run.
+The function took 0.27167510986328125 seconds to run.
 
 `function_source` attribute, with `highlight` filter applied:
 <pre>
@@ -82,15 +82,15 @@ Let's look at the attributes available for a `files` instance.
 
 Canonical Filename: plot_with_overlay.png
 
-Cache Filepath: /var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/ac/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png
+Cache Filepath: /var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/4c/4c1c26fee47cb21ec514aab841d03741511a8cab5044825be424b230c185728c.png
 
-Public URLs: ['https://storage.googleapis.com/precipy_demo_cache/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png']
+Public URLs: []
 
 Depending on the use case, you may wish to link to assets in the output directory (which will be the same directory where documentation will end up. Or the cache filepath, which will be a fully qualified path on the same file system. Or one of the Public URLs which show where the item has been uploaded to cloud storage. (Bucket must be sent to public/anonymous access.)
 
 Here are examples of img tages using each of these three.
 
 <img src="plot_with_overlay.png" style="border: thin solid grey; width: 200px;" width="200px"></img>
-<img src="/var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/ac/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png"  style="border: thin solid blue; width: 200px;"></img>
-<img src="https://storage.googleapis.com/precipy_demo_cache/aca94ecbd61fb839d7bb1410fab10c7cb53f88a7e86b2d940a3cdf9d7a1bf7a8.png"  style="border: thin solid red; width: 200px;"></img>
+<img src="/var/folders/wb/1y3rpg4n7798b3nxxlj6vdy80000gn/T/precipy/precipy_demo_cache/4c/4c1c26fee47cb21ec514aab841d03741511a8cab5044825be424b230c185728c.png"  style="border: thin solid blue; width: 200px;"></img>
+<img src=""  style="border: thin solid red; width: 200px;"></img>
 
