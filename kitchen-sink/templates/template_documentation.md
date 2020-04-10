@@ -19,8 +19,11 @@ Precipy populates the jinja environment with information from analytics function
 
 If there are any constants defined in the config, they are accessible via the `constants` dictionary or directly in the top level namespace.
 
+<table>
 {% for const, value in constants.items() %}
-- {{ const }} = {{ value }}{% endfor %}
+<tr style="background-color: {{ loop.cycle("white", "lightgray") }};"><th>{{ const }}</th><td>{{ value }}</td></tr>
+{% endfor %}
+</table>
 
 ### Functions
 

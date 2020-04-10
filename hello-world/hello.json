@@ -1,0 +1,10 @@
+{
+    "logfile" : "precipy.log",
+    "loglevel" : "DEBUG",
+    "analytics" : [
+        ["hello", {}]
+    ],
+    "template_dir" : ".",
+    "templates" : ["example.md"],
+    "filters" : [["markdown", "html"]]
+}
