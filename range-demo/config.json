@@ -1,0 +1,19 @@
+{
+    "logfile" : "precipy.log",
+    "loglevel" : "DEBUG",
+    "constants" : {
+        "RANDOM_FILENAME" : "random.npy",
+        "PLOT_FILENAME" : "plot_with_overlay.png"
+    },
+    "ranges" : {
+        "n" : [1, 10, 100],
+        "c" : { "start" : 1, "stop" : 9, "step" : 2 }
+    },
+    "analytics" : [
+        ["generate_data", {"seed" : 1002, "a" : 0, "b" : 101, "n" : 10}],
+        ["plot_values", {"depends" : ["generate_data"], "c" : 40, "n" : 10}]
+    ],
+    "template_dir" : ".",
+    "templates" : ["example.md"],
+    "filters" : [["markdown", "html"], ["weasyprint", "pdf"]]
+}

@@ -1,0 +1,6 @@
+## Example
+
+Plots
+
+
+<img src="plot_with_overlay.png" style="border: thin solid grey; width: 200px;" width="200px"></img>
