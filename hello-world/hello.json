@@ -4,7 +4,6 @@
     "analytics" : [
         ["hello", {}]
     ],
-    "template_dir" : ".",
-    "templates" : ["example.md"],
+    "templates" : ["template_documentation.md", "example.md"],
     "filters" : [["markdown", "html"]]
 }
