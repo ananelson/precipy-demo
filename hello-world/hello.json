@@ -1,4 +1,6 @@
 {
+    "cache_bucket_name" : "precipy_demo_cache",
+    "output_bucket_name" : "precipy_demo_output",
     "logfile" : "precipy.log",
     "loglevel" : "DEBUG",
     "analytics" : [

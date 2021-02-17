@@ -42,7 +42,7 @@ Each of these function keys can also be used directly. Let's look at the attribu
 hello
 
 `function_elapsed_seconds` attribute:
-The function took 8.106231689453125e-06 seconds to run.
+The function took 6.9141387939453125e-06 seconds to run.
 
 `function_source` attribute, with `highlight` filter applied:
 <pre>

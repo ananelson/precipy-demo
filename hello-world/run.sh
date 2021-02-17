@@ -1,1 +1,1 @@
- precipy hello.json -m "analytics"
+ precipy hello.json -m "analytics" -s google
