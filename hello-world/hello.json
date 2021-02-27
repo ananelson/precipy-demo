@@ -4,8 +4,10 @@
     "logfile" : "precipy.log",
     "loglevel" : "DEBUG",
     "analytics" : [
-        ["hello", {"x" : 5}]
+        ["hello", {"x" : 5}],
+        ["make_a_file", {"name" : "foo"}]
     ],
+    "reset" : true,
     "templates" : ["template_documentation.md", "example.md"],
     "filters" : [["markdown", "html"]]
 }

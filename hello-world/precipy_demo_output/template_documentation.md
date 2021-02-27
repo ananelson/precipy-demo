@@ -31,6 +31,7 @@ For this demo, the analytics functions are:
 
 
 - hello
+- make_a_file
 
 Each of these function keys can also be used directly. Let's look at the attributes/methods available for one of these function objects in detail.
 
@@ -42,7 +43,7 @@ Each of these function keys can also be used directly. Let's look at the attribu
 hello
 
 `function_elapsed_seconds` attribute:
-The function took 1.0251998901367188e-05 seconds to run.
+The function took 1.0013580322265625e-05 seconds to run.
 
 `function_source` attribute, with `highlight` filter applied:
 <pre>
