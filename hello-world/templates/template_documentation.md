@@ -56,9 +56,12 @@ The function returned output: `{{ af.function_output }}`
 The `kwargs` attribute contains function arguments in a dictionary:
 
 {% for k, v in af.kwargs.items() %}
-- {{ k }}: {{ v }}{% endfor %}
+- {{ k }}: {{ v }}
+{% endfor -%}
+
 
 The `files` attribute contains all files associated with this function in a dictionary. Usually these are the files generated as side effects from running the function:
 
 {% for k in af.files.keys() %}
-- {{ k }} {{ v }}{% endfor %}
+- <a href="{{ k }}">{{ k }}</a>
+{% endfor %}

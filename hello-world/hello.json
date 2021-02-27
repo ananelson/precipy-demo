@@ -4,7 +4,7 @@
     "logfile" : "precipy.log",
     "loglevel" : "DEBUG",
     "analytics" : [
-        ["hello", {}]
+        ["hello", {"x" : 5}]
     ],
     "templates" : ["template_documentation.md", "example.md"],
     "filters" : [["markdown", "html"]]

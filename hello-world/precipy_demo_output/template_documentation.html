@@ -27,17 +27,22 @@
 <p><code>function_name</code> attribute:
 hello</p>
 <p><code>function_elapsed_seconds</code> attribute:
-The function took 6.9141387939453125e-06 seconds to run.</p>
+The function took 1.0251998901367188e-05 seconds to run.</p>
 <p><code>function_source</code> attribute, with <code>highlight</code> filter applied:
 <pre>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><a name="l-1"></a><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hello</span>(af):
-<a name="l-2"></a>    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">-1</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><a name="l-1"></a><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hello</span>(af, x):
+<a name="l-2"></a>    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">-1</span> <span style="color: #666666">*</span> x
 </pre></div>
 </pre></p>
 <p><code>function_output</code> attribute:
-The function returned output: <code>-1</code></p>
+The function returned output: <code>-5</code></p>
 <p>The <code>kwargs</code> attribute contains function arguments in a dictionary:</p>
-<p>The <code>files</code> attribute contains all files associated with this function in a dictionary. Usually these are the files generated as side effects from running the function:</p>
 <ul>
-<li>metadata.pkl </li>
+<li>
+<p>x: 5
+The <code>files</code> attribute contains all files associated with this function in a dictionary. Usually these are the files generated as side effects from running the function:</p>
+</li>
+<li>
+<p><a href="metadata.pkl">metadata.pkl</a></p>
+</li>
 </ul>

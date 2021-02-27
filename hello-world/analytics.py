@@ -1,2 +1,2 @@
-def hello(af):
-    return -1
+def hello(af, x):
+    return -1 * x

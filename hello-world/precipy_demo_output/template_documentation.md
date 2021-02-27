@@ -42,23 +42,23 @@ Each of these function keys can also be used directly. Let's look at the attribu
 hello
 
 `function_elapsed_seconds` attribute:
-The function took 6.9141387939453125e-06 seconds to run.
+The function took 1.0251998901367188e-05 seconds to run.
 
 `function_source` attribute, with `highlight` filter applied:
 <pre>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><a name="l-1"></a><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hello</span>(af):
-<a name="l-2"></a>    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">-1</span>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><a name="l-1"></a><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">hello</span>(af, x):
+<a name="l-2"></a>    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">-1</span> <span style="color: #666666">*</span> x
 </pre></div>
 </pre>
 
 `function_output` attribute:
-The function returned output: `-1`
+The function returned output: `-5`
 
 The `kwargs` attribute contains function arguments in a dictionary:
 
 
-
+- x: 5
 The `files` attribute contains all files associated with this function in a dictionary. Usually these are the files generated as side effects from running the function:
 
 
-- metadata.pkl 
+- <a href="metadata.pkl">metadata.pkl</a>
