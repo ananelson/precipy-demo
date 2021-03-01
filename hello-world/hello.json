@@ -7,7 +7,7 @@
         ["hello", {"x" : 5}],
         ["make_a_file", {"name" : "foo"}]
     ],
-    "reset" : true,
+    "reset" : false,
     "templates" : ["template_documentation.md", "example.md"],
-    "filters" : [["markdown", "html"]]
+    "filters" : [["pandoc", "html", "--title-prefix=DEMO"]]
 }
